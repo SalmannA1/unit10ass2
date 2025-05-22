@@ -3,7 +3,7 @@ import { Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-primary-700 text-white py-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
@@ -22,14 +22,14 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <div className="space-y-2">
-              <p><a href="#about" className="hover:text-blue-300">About Us</a></p>
-              <p><a href="#team" className="hover:text-blue-300">Our Team</a></p>
-              <p><a href="#jobs" className="hover:text-blue-300">Jobs</a></p>
-              <p><a href="#apply" className="hover:text-blue-300">Apply Now</a></p>
+              <p><a href="#about" className="hover:text-secondary-100">About Us</a></p>
+              <p><a href="#team" className="hover:text-secondary-100">Our Team</a></p>
+              <p><a href="#jobs" className="hover:text-secondary-100">Jobs</a></p>
+              <p><a href="#apply" className="hover:text-secondary-100">Apply Now</a></p>
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-4 border-t border-gray-700 text-center">
+        <div className="mt-8 pt-4 border-t border-primary-600 text-center">
           <p>&copy; {new Date().getFullYear()} Hot Beans Web. All rights reserved.</p>
         </div>
       </div>
