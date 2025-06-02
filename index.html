@@ -1,15 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hot Beans Web - Career Opportunities</title>
+<head>
+    <!-- Basic meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO meta tags -->
     <meta name="description" content="Join Hot Beans Web as a web developer. We offer exciting career opportunities for web developers at all levels.">
-    <meta name="keywords" content="web development, career, job, developer, trainee, Hot Beans Web">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <meta name="keywords" content="web development, career, job, developer, trainee">
+    
+    <!-- Page title -->
+    <title>Hot Beans Web - Career Opportunities</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section with navigation -->
+    <header>
+        <nav>
+            <div class="logo">Hot Beans Web</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#apply" class="apply-btn">Apply Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section id="hero">
+        <div class="container">
+            <h1>Start Your Web Development Journey</h1>
+            <p>Join our team of passionate developers and build amazing web experiences</p>
+            <a href="#apply" class="cta-button">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Hot Beans Web</h2>
+            <p>We're a friendly web development company looking for new developers to join our team. We believe in helping new developers grow and learn in a supportive environment.</p>
+            <div class="features">
+                <div class="feature">
+                    <h3>Training & Mentorship</h3>
+                    <p>Learn from experienced developers</p>
+                </div>
+                <div class="feature">
+                    <h3>Real Projects</h3>
+                    <p>Work on actual client websites</p>
+                </div>
+                <div class="feature">
+                    <h3>Growth</h3>
+                    <p>Clear career progression path</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team section -->
+    <section id="team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid" id="teamGrid">
+                <!-- Team members will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs section -->
+    <section id="jobs">
+        <div class="container">
+            <h2>Open Positions</h2>
+            <div class="jobs-list" id="jobsList">
+                <!-- Job listings will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Application form section -->
+    <section id="apply">
+        <div class="container">
+            <h2>Apply Now</h2>
+            <form id="applicationForm">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="position">Position *</label>
+                    <select id="position" required>
+                        <option value="">Select a position</option>
+                        <option value="junior-frontend">Junior Frontend Developer</option>
+                        <option value="junior-backend">Junior Backend Developer</option>
+                        <option value="junior-fullstack">Junior Full Stack Developer</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Cover Letter *</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resume">Resume/CV (PDF only) *</label>
+                    <input type="file" id="resume" accept=".pdf" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: careers@hotbeansweb.com</p>
+                    <p>Phone: +44 (0) 1234 567890</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#jobs">Jobs</a></li>
+                        <li><a href="#apply">Apply Now</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hot Beans Web. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
 </html>
